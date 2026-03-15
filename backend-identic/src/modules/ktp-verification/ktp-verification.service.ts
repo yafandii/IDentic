@@ -140,11 +140,7 @@ export const getHistory = async (
   }
 
   const totalData = await DbHelper.query(
-    `SELECT COUNT(*) as total FROM verification_logs where user_id = @user_id ${
-      payload.keyword
-        ? `and (nik_target LIKE @keyword 
-                              or match_score LIKE @keyword 
-                              or message LIKE @keyword)`
+    `SELECT COUNT(*) as total FROM db`
         : ""
     }`,
     {
