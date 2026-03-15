@@ -26,17 +26,17 @@ export const verifyFaceService = async (
   }
 
   const data: DukcapilRequest = {
-    transactionId: "11",
-    transactionSource: "mobile",
-    nik: encryptRSA(payload.nik),
-    threshold: 5,
+    transactionId: "",
+    transactionSource: " ",
+    nik: "",
+    threshold: 0,
     image: payload.imageBase64,
     template: "",
-    type: "FACE",
-    position: "F",
-    customer_id: "990040921020245",
-    user_id: encryptRSA(process.env.USER_ID_FR!),
-    password: encryptRSA("Abdgt%$#"),
+    type: "",
+    position: "",
+    customer_id: "",
+    user_id: "",
+    password: "",
     ip: process.env.IP_FR!,
   };
 
