@@ -6,7 +6,7 @@ const getPublicKey = (): string => {
   try {
     const certPath = path.resolve(
       __dirname,
-      "../../assets/certs/990040921020245.pem",
+      "../../assets/certs/file.pem",
     );
 
     if (!fs.existsSync(certPath)) {
